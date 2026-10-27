@@ -1,11 +1,12 @@
 # 🎙️ Asistente de voz
 
-**Mantén Ctrl + Alt + Espacio mientras hablas y suelta**: lo hace al instante. No gasta tokens de Claude: la voz (Whisper large-v3-turbo, en tu tarjeta gráfica) y la IA (Ollama qwen2.5) corren gratis en tu PC.
+**Mantén RePag (Page Up) mientras hablas y suelta**: lo hace al instante. No gasta tokens de Claude: la voz (Whisper large-v3-turbo, en tu tarjeta gráfica) y la IA (Ollama qwen2.5) corren gratis en tu PC.
 
-- **Mantener Ctrl + Alt + Espacio**: habla mientras lo mantienes; al soltar, lo ejecuta. Puedes hacer pausas sin que te corte.
-- **Tocar Ctrl + Alt + Espacio** (sin mantener): habla y se detiene sola cuando te callas, o tócalo otra vez.
+- **Mantener RePag**: habla mientras lo mantienes; al soltar, lo ejecuta. Puedes hacer pausas sin que te corte.
+- **Tocar RePag** (sin mantener): habla y se detiene sola cuando te callas, o tócalo otra vez.
 - No te responde con voz: abajo de la pantalla ves lo que está haciendo (⠋ Buscando en Spotify…) y luego el resultado (✅). Si prefieres que también hable, pon `responder_con_voz: true` en `config.yaml`.
-- **Ctrl + Alt + T**: escribir la orden en una cajita, en vez de hablar.
+- **AvPag (Page Down)**: escribir la orden en una cajita, en vez de hablar.
+- Mientras el asistente está abierto, RePag y AvPag ya no sirven para subir o bajar páginas. Si las necesitas, cambia los atajos en `config.yaml`.
 - Icono naranja junto al reloj: clic derecho para ver el menú (configuración, notas, salir).
 - Puedes empezar con "oye…". No hace falta decir las frases exactas: si no reconoce la frase, la IA local la interpreta.
 

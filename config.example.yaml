@@ -5,8 +5,8 @@
 # ============================================================
 
 # Atajos de teclado
-atajo_voz: "ctrl+alt+space"     # mantenlo presionado mientras hablas y suelta (o tócalo y habla)
-atajo_texto: "ctrl+alt+t"       # abre una cajita para escribir la orden
+atajo_voz: "page up"            # RePag: mantenla presionada mientras hablas y suelta (o tócala y habla)
+atajo_texto: "page down"        # AvPag: abre una cajita para escribir la orden
 
 # Reconocimiento de voz (Whisper, gratis y local)
 voz:

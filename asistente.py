@@ -129,10 +129,10 @@ class Asistente:
             keyboard.remove_hotkey(atajo)
         if getattr(self, "_gancho_soltar", None):
             keyboard.unhook(self._gancho_soltar)
-        atajo_voz = self.cfg.get("atajo_voz", "ctrl+alt+space")
+        atajo_voz = self.cfg.get("atajo_voz", "page up")
         self._atajos = [
             keyboard.add_hotkey(atajo_voz, self.al_atajo_voz, suppress=True),
-            keyboard.add_hotkey(self.cfg.get("atajo_texto", "ctrl+alt+t"), self.ui.pedir_texto,
+            keyboard.add_hotkey(self.cfg.get("atajo_texto", "page down"), self.ui.pedir_texto,
                                 suppress=True, trigger_on_release=True),
         ]
         self._gancho_soltar = keyboard.on_release_key(atajo_voz.split("+")[-1].strip(), self._al_soltar_atajo)

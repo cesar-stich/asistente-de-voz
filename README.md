@@ -1,6 +1,6 @@
 # 🎙️ Asistente de voz para Windows
 
-Asistente de voz **local y gratuito** para Windows. Mantienes un atajo de teclado, hablas, sueltas, y lo hace: pone música en Spotify, abre videos en YouTube, maneja tu pomodoro, recordatorios, páginas, apps y más.
+Asistente de voz **local y gratuito** para Windows. Mantienes **RePag**, hablas, sueltas, y lo hace: pone música en Spotify, abre videos en YouTube, maneja tu pomodoro, recordatorios, páginas, apps y más.
 
 - **Sin costo por uso:** la voz y la IA corren en tu propia PC. No usa APIs de pago ni tokens.
 - **Rápido:** unos 0,4 s para entender la voz (en GPU) y menos de 0,5 s para interpretar frases libres.
@@ -31,7 +31,7 @@ Asistente de voz **local y gratuito** para Windows. Mantienes un atajo de teclad
 ## 🧩 Cómo funciona
 
 ```
- Atajo (mantener Ctrl+Alt+Espacio)
+ Atajo (mantener RePag)
         │
         ▼
  🎙️ Micrófono ──► Whisper large-v3-turbo (GPU, local)  ──► texto
