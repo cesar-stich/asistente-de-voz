@@ -1,0 +1,14 @@
+# Entorno y modelos (se reinstalan con instalar.bat / se descargan solos)
+.venv/
+modelos/
+__pycache__/
+*.pyc
+
+# Datos personales: configuración propia, claves, registro, notas
+config.yaml
+datos/
+google_credentials.json
+notas.md
+notas_archivadas_*.md
+.spotify_token
+.google_token.json

@@ -1,0 +1,99 @@
+# ============================================================
+#  Configuración del Asistente de Voz
+#  Después de editar: clic derecho en el ícono de la bandeja
+#  -> "Recargar configuración" (o reinicia el asistente).
+# ============================================================
+
+# Atajos de teclado
+atajo_voz: "ctrl+alt+space"     # mantenlo presionado mientras hablas y suelta (o tócalo y habla)
+atajo_texto: "ctrl+alt+t"       # abre una cajita para escribir la orden
+
+# Reconocimiento de voz (Whisper, gratis y local)
+voz:
+  modelo_whisper: large-v3-turbo  # el mejor; si va lento usa "small"
+  dispositivo: auto             # auto = usa la tarjeta gráfica (NVIDIA) si se puede
+  idioma: es
+  max_segundos: 15              # máximo que graba si solo tocaste el atajo
+  silencio_fin: 1.0             # segundos de silencio para dejar de grabar (si solo tocaste el atajo)
+
+responder_con_voz: false        # true = además de mostrarlo, te responde hablando
+
+# IA local (Ollama) para entender frases libres, resumir, traducir, redactar
+ia:
+  activa: true
+  modelo: qwen2.5:3b            # rápido; puedes cambiarlo por otro de "ollama list" (ej. gemma2, más lento)
+  url: http://127.0.0.1:11434
+
+chrome: "C:/Program Files/Google/Chrome/Application/chrome.exe"
+
+# Cuando dices "pon <algo>" sin decir dónde: spotify o youtube
+musica_por_defecto: spotify
+
+pomodoro:
+  enfoque: 25                   # minutos
+  descanso: 5
+  descanso_largo: 15
+  ciclos_para_largo: 4
+  musica_al_iniciar: false      # true = al iniciar el pomodoro pone la playlist de abajo
+  playlist_enfoque: "lofi para estudiar"
+
+# Páginas: "abre <nombre>"  (agrega las tuyas)
+sitios:
+  google: https://www.google.com
+  youtube: https://www.youtube.com
+  gmail: https://mail.google.com
+  correo: https://mail.google.com
+  calendario: https://calendar.google.com
+  drive: https://drive.google.com
+  whatsapp: https://web.whatsapp.com
+  depor: https://depor.com
+  libero: https://libero.pe
+  netflix: https://www.netflix.com
+  chatgpt: https://chatgpt.com
+  gemini: https://gemini.google.com
+  claude: https://claude.ai
+  traductor: https://translate.google.com
+  mapas: https://maps.google.com
+  # aula virtual: https://...
+
+# Apps: "abre <nombre>" / "cierra <nombre>"
+#   abrir   = comando o ruta del programa
+#   proceso = nombre del .exe (para poder cerrarlo)
+apps:
+  word: {abrir: winword, proceso: WINWORD.EXE}
+  excel: {abrir: excel, proceso: EXCEL.EXE}
+  powerpoint: {abrir: powerpnt, proceso: POWERPNT.EXE}
+  spotify: {abrir: "spotify:", proceso: Spotify.exe}
+  chrome: {abrir: chrome, proceso: chrome.exe}
+  calculadora: {abrir: calc, proceso: CalculatorApp.exe}
+  bloc de notas: {abrir: notepad, proceso: notepad.exe}
+  explorador: {abrir: explorer, proceso: ""}
+  paint: {abrir: mspaint, proceso: mspaint.exe}
+  configuracion: {abrir: "ms-settings:", proceso: ""}
+  administrador de tareas: {abrir: taskmgr, proceso: Taskmgr.exe}
+
+# Carpetas: "abre la carpeta <nombre>"
+carpetas:
+  descargas: ~/Downloads
+  documentos: ~/Documents
+  escritorio: ~/Desktop
+  imagenes: ~/Pictures
+  # universidad: C:/Users/TU_USUARIO/Desktop/universidad
+
+# Spotify Premium (ver LEEME.md -> "Conectar Spotify")
+spotify:
+  client_id: ""
+  redirect_uri: http://127.0.0.1:8888/callback
+
+# Google Calendar + Gmail (ver LEEME.md -> "Conectar Google")
+#   Necesita el archivo google_credentials.json en esta carpeta.
+google:
+  activo: false
+
+# Tu nombre, para firmar los correos que redacta
+nombre: ""
+
+# Contactos para correos: "escríbele a juan que llego tarde"
+contactos:
+  # juan: juan@gmail.com
+  # mama: mama@gmail.com
